@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://fav.farm/🎹" />
+
+</head>
+<body>
+    <h1>Virtual Piano</h1>
+    <div class="piano-container">
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>A</kbd>
+            </div>
+            <div data-key="83" class="key">
+                <kbd>S</kbd>
+            </div>
+            <div data-key="68" class="key">
+                <kbd>D</kbd>
+            </div>
+            <div data-key="70" class="key">
+                <kbd>F</kbd>
+            </div>
+            <div data-key="71" class="key">
+                <kbd>G</kbd>
+            </div>
+            <div data-key="72" class="key">
+                <kbd>H</kbd>
+            </div>
+            <div data-key="74" class="key">
+                <kbd>J</kbd>
+            </div>
+            <div data-key="75" class="key">
+                <kbd>K</kbd>
+            </div>
+            <div data-key="76" class="key">
+                <kbd>L</kbd>
+            </div>
+            <div data-key="90" class="key down">
+                <kbd>Z</kbd>
+            </div>
+            <div data-key="88" class="key down">
+                <kbd>X</kbd>
+            </div>
+            <div data-key="67" class="key down">
+                <kbd>C</kbd>
+            </div>
+            <div data-key="86" class="key down">
+                <kbd>V</kbd>
+            </div>
+            <div data-key="66" class="key down">
+                <kbd>B</kbd>
+            </div>
+            <div data-key="78" class="key down">
+                <kbd>N</kbd>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="instructions">
+            <p>Play with your keyboard or click the keys with your mouse!</p>
+            <p>White keys: A S D F G H J K L | Black keys: Z X C V B N M</p>
+        </div>    
+  <audio data-key="65" src="sounds/a1.wav"></audio>
+  <audio data-key="83" src="sounds/a1s.wav"></audio>
+  <audio data-key="68" src="sounds/b1.wav"></audio>
+  <audio data-key="70" src="sounds/c1.wav"></audio>
+  <audio data-key="71" src="sounds/c2.wav"></audio>
+  <audio data-key="72" src="sounds/d1.wav"></audio>
+  <audio data-key="74" src="sounds/d1s.wav"></audio>
+  <audio data-key="75" src="sounds/c1s.wav"></audio>
+  <audio data-key="76" src="sounds/e1.wav"></audio>
+  <audio data-key="90" src="sounds/f1.wav"></audio>
+  <audio data-key="88" src="sounds/f1s.wav"></audio>
+  <audio data-key="67" src="sounds/g1.wav"></audio>
+  <audio data-key="86" src="sounds/g1.wav"></audio>
+  <audio data-key="66" src="sounds/c2.wav"></audio>
+  <audio data-key="78" src="sounds/c1s.wav"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

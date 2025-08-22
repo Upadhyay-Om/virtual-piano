@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(25, 24, 24, 0.5);
+    font-weight: bold;
+}
+.piano-container {
+    background: #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.keys {
+    display: flex;
+    border: 3px solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #222;
+    position: relative;
+}
+
+
+.key {
+    width: 80px;
+    height: 300px;
+    background: white;
+    border: 2px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 10px;
+    user-select: none;
+} 
+.key:active , .key.playing {
+    background: #ddd;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.3);
+    transform: translateY(7px);
+}
+.key kbd {
+    font-size: 2rem;
+    font-weight: 1000;
+    background: none;
+    pointer-events: none;
+}
+.key:hover {
+    background: #f0f0f0;
+    transform: translateY(2px);
+}
+.key.down {
+    width: 50px;
+    height: 180px;
+    background: #222;
+    color: white;
+    position: absolute;
+    left: 60px;
+    z-index: 10;
+    border: 2px solid #000;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.key.down kbd {
+    color:white;
+    font-size: 1.5rem;
+}
+.key.down:active, .key.down.playing {
+    background: #555;
+    transform: translateY(7px);
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.5);
+}
+.key.down:hover{
+    background: #444;
+    transform: translateY(2px);
+}
+.key.down[data-key="90"] { left: 60px; }
+
+
+.key.down[data-key="88"] { left: 140px; }
+
+
+.key.down[data-key="67"] { left: 300px; }
+
+
+.key.down[data-key="86"] { left: 380px; }
+
+.key.down[data-key="66"] { left: 540px; }
+
+.key.down[data-key="78"] { left: 620px; }
+
+.instructions {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;   
+}
